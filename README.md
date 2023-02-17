@@ -16,6 +16,7 @@ Patches (in the patches folder):
 - openclipboard
 - scrollback (reflow + altscreen)
 - spoiler
+- st-copyout script (from Luke Smith's build)
 - undercurl
 - xresources-signal
 
