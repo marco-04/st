@@ -9,11 +9,15 @@ Patches (in the patches folder):
 - boxdraw [disabled by default]
 - clipboard
 - desktop entry
+- externalpipe
+- externalpipe-signal
+- externalpipe-eternal
 - newterm
 - openclipboard
 - scrollback (reflow + altscreen)
 - spoiler
 - undercurl
+- xresources-signal
 
 Requirements
 ------------
