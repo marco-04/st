@@ -6,7 +6,7 @@ char *externalpipe_sigusr1[] = {"/bin/sh", "-c", "externalpipe_buffer.sh st_stri
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Meslo LGM Nerd Font Mono-12";
+static char *font = "monospace-12";
 static int borderpx = 4;
 
 /*
