@@ -209,6 +209,9 @@ static MouseShortcut mshortcuts[] = {
 
 #define ACMPL_MOD ControlMask|Mod1Mask
 
+static char *editscreen[] = { "/bin/sh", "-c", "st-editscreen", "externalpipe", NULL };
+static char *copyout[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
+
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
@@ -226,6 +229,8 @@ static Shortcut shortcuts[] = {
   { TERMMOD,              XK_Up,          kscrollup,      {.i = -1} },
   { TERMMOD,              XK_Down,        kscrolldown,    {.i = -1} },
   { TERMMOD,              XK_Return,      newterm,        {.i =  0} },
+	{ TERMMOD,              XK_E,           externalpipe,   {.v = editscreen} },
+	{ TERMMOD,              XK_O,           externalpipe,   {.v = copyout} },
   { MODKEY,               XK_o,           opencopied,     {.v = "xdg-open"} },
 	{ ACMPL_MOD,            XK_Tab,         autocomplete,   { .i = ACMPL_WORD        } },
 	{ ACMPL_MOD,            XK_period,      autocomplete,   { .i = ACMPL_FUZZY_WORD  } },
